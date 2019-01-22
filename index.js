@@ -1,4 +1,4 @@
-var myBox = document.getElementById('box');
+var box = document.getElementById('box');
 /*
 box.style.width = '100px';
 box.style.height = '100px';
@@ -17,8 +17,15 @@ var boxStyle = box.style
 boxStyle.width = '100px';
 boxStyle.height = '100px';
 boxStyle.backgroundColor = "grey";
-*/
+
 
 //Another way to do it:
 
-myBox.setAttibute('style', 'width:150px;height:150px;background-color:red;');
+box.setAttibute('style', 'width:100px;height:100px;background-color:slategrey;');
+ERROR MESSAGE: box.getattribute is not a function
+
+*/
+
+box.onclick = function () {
+    box.style.border = '1px solid black';
+}
